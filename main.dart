@@ -1,5 +1,6 @@
 void main() {
-  manejoListas();
+  // manejoListas();
+  manejoMap();
 }
 
 void manejoVariables() {
@@ -20,4 +21,15 @@ void manejoListas() {
   for (int indice = 0; indice < nombres.length; indice++) {
     print('El nombre es: ${nombres[indice]}');
   }
+}
+
+void manejoMap() {
+  Map<String, dynamic> persona = {
+    'nombre': 'Jesús Alejandro',
+    'edad': 25,
+    'genero': 'Masculino'
+  };
+
+  persona.addAll({ 'profesion': 'Programador' });
+  print('${persona['nombre']} tiene ${persona['edad']} años y es ${persona['profesion']}');
 }
